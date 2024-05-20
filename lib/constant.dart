@@ -1,0 +1,5 @@
+const apikey = "a22799d2fa53ec979467b16d482b3678";
+const imagePath = "https://image.tmdb.org/t/p/w500";
+
+const mBanner =
+    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a58a7719-0dcf-4e0b-b7bb-d2b725dbbb8e/dg122em-a63cdc4b-8ab2-481e-877f-1cf16d0544fe.png/v1/fill/w_800,h_1000,q_70,strp/godzilla_x_kong___the_new_empire_poster_2024_by_andrewvm_dg122em-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTUwMCIsInBhdGgiOiJcL2ZcL2E1OGE3NzE5LTBkY2YtNGUwYi1iN2JiLWQyYjcyNWRiYmI4ZVwvZGcxMjJlbS1hNjNjZGM0Yi04YWIyLTQ4MWUtODc3Zi0xY2YxNmQwNTQ0ZmUucG5nIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.etR--6GDBvQup5xOEZQ-3o6aRf-yCxQsmM6dayhbWs8";
