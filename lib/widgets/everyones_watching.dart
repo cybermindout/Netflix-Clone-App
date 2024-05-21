@@ -1,5 +1,5 @@
 
-// ignore_for_file: must_be_immutable
+// ignore_for_file: must_be_immutable, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:netflix_ui/Screens/details_page.dart';
