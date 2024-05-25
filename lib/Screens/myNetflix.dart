@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:netflix_ui/Screens/games.dart';
 import 'package:netflix_ui/api/api.dart';
 import 'package:netflix_ui/widgets/bottomsheet_profile.dart';
 import 'package:netflix_ui/widgets/custom_slider.dart';
@@ -21,7 +22,16 @@ class _MyNetflixPageState extends State<MyNetflixPage> {
         backgroundColor: Colors.black,
         title: const Text("My Netflix"),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SearchPage(),
+                  ),
+                );
+              },
+              icon: const Icon(Icons.search)),
           IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
         ],
       ),

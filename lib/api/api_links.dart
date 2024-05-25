@@ -10,5 +10,7 @@ final nowPlaying =
 
 final upcoming = "https://api.themoviedb.org/3/movie/upcoming?api_key=$apiKey";
 
+final search = "https://api.themoviedb.org/3/search/movie?api_key=$apiKey";
+
 final allmovies =
     "https://api.themoviedb.org/3/trending/all/day?api_key=$apiKey";

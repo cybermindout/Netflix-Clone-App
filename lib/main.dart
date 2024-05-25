@@ -19,11 +19,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        // useMaterial3: true,
-        brightness: Brightness.dark,
-        scaffoldBackgroundColor:Colors.black 
-      ),
+          // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          // useMaterial3: true,
+          brightness: Brightness.dark,
+          scaffoldBackgroundColor: Colors.black),
       home: const SplashScreen(),
     );
   }
@@ -37,27 +36,25 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  int indexNum =0;
+  int indexNum = 0;
   final screens = const [
     HomePage(),
-    GamesPage(),
+    SearchPage(),
     NewHotPage(),
     MyNetflixPage(),
-
   ];
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-
+    return Scaffold(
       body: screens.elementAt(indexNum),
-
       bottomNavigationBar: BottomNavigationBar(
-        items:const [
-          BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.sports_esports),label: "Games"),
-          BottomNavigationBarItem(icon: Icon(Icons.video_library),label: "News & hot"),
-          BottomNavigationBarItem(icon: Icon(Icons.person),label: "My Netflix"),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.video_library), label: "News & hot"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person), label: "My Netflix"),
         ],
         showSelectedLabels: true,
         backgroundColor: Colors.black,
@@ -65,15 +62,14 @@ class _MyHomePageState extends State<MyHomePage> {
         unselectedItemColor: Colors.grey,
         showUnselectedLabels: true,
         currentIndex: indexNum,
-        type:BottomNavigationBarType.fixed,
+        type: BottomNavigationBarType.fixed,
         enableFeedback: false,
-
-        onTap: (int index){
+        onTap: (int index) {
           setState(() {
             indexNum = index;
           });
         },
-        ),
+      ),
     );
   }
 }
